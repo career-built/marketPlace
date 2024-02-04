@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "Product_Service"
+		},
+		{
+			"path": "Database"
+		},
+		{
+			"path": "MessageBroker"
+		},
+		{
+			"path": "Product_Api"
+		},
+		{
+			"path": "OpenTelemetry"
+		},
+		{
+			"path": "utilities"
+		}
+	]
+}
