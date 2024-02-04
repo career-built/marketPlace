@@ -1,4 +1,4 @@
-package database
+package Database
 
 type MySQL struct {
 }

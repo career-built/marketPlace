@@ -1,4 +1,4 @@
-package envvariable
+package utilities
 
 import (
 	"fmt"

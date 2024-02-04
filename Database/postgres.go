@@ -1,21 +1,22 @@
-package database
+package Database
 
 import (
 	"database/sql"
-	"example/baseProject/envvariable"
 	"fmt"
 	"log"
 	"strings"
+
+	"github.com/career-built/marketPlace/utilities"
 
 	_ "github.com/lib/pq"
 )
 
 var (
-	host     = envvariable.Host
-	port     = envvariable.Port
-	user     = envvariable.User
-	password = envvariable.Password
-	dbname   = envvariable.DBName
+	host     = utilities.Host
+	port     = utilities.Port
+	user     = utilities.User
+	password = utilities.Password
+	dbname   = utilities.DBName
 )
 
 // const (

@@ -1,4 +1,4 @@
-package InstrumentationBasedTracing
+package OpenTelemetry
 
 import (
 	"io"

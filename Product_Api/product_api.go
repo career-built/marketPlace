@@ -1,8 +1,7 @@
-package api
+package Product_Api
 
 import (
 	"context"
-	"example/baseProject/product"
 	"fmt"
 	"io"
 	"net/http"
