@@ -8,6 +8,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/career-built/marketPlace/Product_Service"
+
 	"github.com/labstack/echo/v4"
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
@@ -20,8 +22,8 @@ type MessageTracer interface {
 	StartConfig(serviceName string) (opentracing.Tracer, io.Closer, error)
 }
 type ProductManager interface {
-	Add(product *product.Product, queueName string) error
-	GetByID(id int) (*product.Product, error)
+	Add(product *Product_Service.Product, queueName string) error
+	GetByID(id int) (*Product_Service.Product, error)
 }
 
 type ProductRouter struct {
@@ -38,7 +40,7 @@ func NewProductRouter(productManager ProductManager, messageTracer MessageTracer
 
 func (obj *ProductRouter) CreateProduct(c echo.Context) error {
 	//Request handeling
-	product := new(product.Product)
+	product := new(Product_Service.Product)
 
 	if err := c.Bind(product); err != nil {
 		fmt.Printf("Error While Binding the product\n")
