@@ -1,0 +1,11 @@
+go 1.21.4
+
+use (
+	./Database
+	./MessageBroker
+	./OpenTelemetry
+	./Product_Api
+	./Product_Service
+	./main
+	./utilities
+)

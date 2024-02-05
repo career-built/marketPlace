@@ -94,6 +94,7 @@ func (obj *ProductRouter) GetProductFromMarket(c echo.Context) error {
 	fmt.Println("Start Config")
 	serviceName := "product maneger servicen"
 	mainspanString := "Get Product From Market Span"
+
 	tracer, closer, err := obj.messageTracer.StartConfig(serviceName)
 	if err != nil {
 		panic(fmt.Sprintf("ERROR: cannot init Jaeger: %v\n", err))
