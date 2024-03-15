@@ -48,5 +48,4 @@ func main() {
 	e.GET("/getproductfromMarket", productRouter.GetProductFromMarket)
 
 	e.Logger.Fatal(e.Start(":3030"))
-
 }
